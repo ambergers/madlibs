@@ -60,6 +60,8 @@ def show_madlib():
     color = request.args.get('color')
     noun = request.args.get('noun')
     adjective = choice(request.args.getlist('adjective'))
+    adjective2 = choice(request.args.getlist('adjective'))
+    adjective3 = choice(request.args.getlist('adjective'))
    
     print(adjective)
 
@@ -68,7 +70,9 @@ def show_madlib():
         person=person,
         color=color,
         noun=noun,
-        adjective=adjective
+        adjective=adjective,
+        adjective2=adjective2,
+        adjective3=adjective3
         )
 
 
