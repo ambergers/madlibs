@@ -7,8 +7,14 @@
 
 </head>
 <body>
-    Hi {{ person }}! I think you're {{ compliment }}!
-    <br><br>
+    <h1>Hi {{ person }}! I think you're</h1> 
+
+    
+    {% for compliment in compliments%}
+        {{compliment}}<br>
+    {%endfor%}
+      
+    <br>
     <form action="/game">
         Would you like to play a game? ;) <br>
         <input type="radio" name="play_game" value="no"> No

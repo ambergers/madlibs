@@ -4,26 +4,25 @@
   <title>Madlib Time</title>
   <link href="static/madlibs.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
-
 </head>
 <body>
 
     <h1>Let's get some Madlib ingredients!</h1>
-    <p>Enter values for each type below:</p>
-    <br>
-
     <form action="/madlib">
-        Person: <input type="text" name="person" placeholder="ex: Bob Ross"><br><br>
-        Color: <input type="text" name="color" placeholder="ex: purpleish"><br><br>
-        Noun: <input type="text" name="noun" placeholder="ex: toothbrush"><br><br>
+        Person <br>
+        <input type="text" name="person" placeholder="ex: Bob Ross"><br>
+        Color <br>
+        <input type="text" name="color" placeholder="ex: purpleish"><br>
+        Noun <br>
+        <input type="text" name="noun" placeholder="ex: toothbrush"><br>
         <!-- Adjective: <input type="text" name="adjective"><br> -->
         <br>
-        Adjective (pick 2): <br>
+        Adjective(s)<br>
         <input type="checkbox" name="adjective" value="spicy">spicy<br>
         <input type="checkbox" name="adjective" value="warm">warm<br>
         <input type="checkbox" name="adjective" value="moist">moist<br>
-        <br><br>
-        <input type="submit" value="Get me that Madlib"><br>
+        <br>
+        <input type="submit" class="submit_button" value="Get me that Madlib"><br>
     </form>
 
 </body>

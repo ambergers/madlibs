@@ -35,11 +35,12 @@ def greet_person():
 
     player = request.args.get("person")
 
-    compliment = choice(AWESOMENESS)
 
     return render_template("compliment.html",
                            person=player,
-                           compliment=compliment)
+                           # compliment=compliment,
+                           compliments = sorted(AWESOMENESS)
+                           )
 
 
 @app.route('/game')

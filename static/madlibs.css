@@ -2,15 +2,42 @@
 body {
  background-image:url("img/space-background.jpg");
  background-color: #cccccc;
- color: white;
+ color: #D9E2F8;
  font-family: 'Cute Font';
  font-size: 30px;
+ text-align: center;
 }
 
-p {
-    color: white;
+input[type=submit] {
+    background-color: #7F75BC;
+    font-family: 'Cute Font';
+    font-size: 50px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #D9E2F8;
 }
 
 h1 {
-    color: white;
+    color: #D9E2F8;
+}
+
+input[type=text] {
+    background-color: #D9E2F8;
+    border: none;
+    border-radius: 8px;
+    -webkit-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+    width: 25%;
+}
+
+input[type=text]:focus {
+  width: 40%;
+}
+
+p {
+    font-size: 50px;
 }
